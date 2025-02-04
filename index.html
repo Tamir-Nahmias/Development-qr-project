@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +14,19 @@
   <title>Frontend Mentor | QR code component</title>
 </head>
 <body>
-  <div class="content">
-<div class="card">
-  <img src="./images/image-qr-code.png" alt="Barcode">
-  <div class="container">
-    <h1>Improve your front-end skills by building projects</h1>
-    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-  </div>
-
-</div>
-</div>
+  <main class="content" role="main">
+    <div class="card" role="article" aria-labelledby="card-title">
+      <img src="./images/image-qr-code.png" alt="QR code to Frontend Mentor website" role="img">
+      <div class="container">
+        <h1 id="card-title">Improve your front-end skills by building projects</h1>
+        <p aria-describedby="card-title">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Tamir Nachmias</a>.
-  </div>
+  <footer class="attribution" role="contentinfo">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="#" aria-label="Tamir Nachmias's portfolio">Tamir Nachmias</a>.
+  </footer>
 </body>
 </html>
